@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  perspective: 1000px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  height: 80%;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  padding: 30px 50px;
+  transform-style: preserve-3d;
+}
+.productImage {
+  display: flex;
+  position: relative;
+  transition: all 0.2s ease-out;
+}
+.productImage > img {
+  width: 400px;
+  z-index: 2;
+}
+.productTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 0px 20px;
+  transition: all 0.2s ease-out;
+}
+.productDescription {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: smaller;
+  font-style: italic;
+  padding: 20px 10px;
+  transition: all 0.2s ease-out;
+}
+.sizes {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  transition: all 0.2s ease-out;
+}
+.sizes > button {
+  width: 17%;
+  border: none;
+  border-radius: 30px;
+  background-color: white;
+  height: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  outline: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+.active {
+  background-color: rgba(0, 0, 0, 0.589) !important;
+  color: white;
+}
+.purchase {
+  display: flex;
+  padding: 20px 20px;
+  perspective: preserve-3d;
+  transition: all 0.2s ease-out;
+}
+.purchase > button {
+  width: 100%;
+  background-color: #773534bd;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px #7735345d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+.supContainer {
+  display: flex;
+}
